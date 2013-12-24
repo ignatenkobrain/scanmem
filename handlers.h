@@ -296,4 +296,15 @@ bool handler__write(globals_t * vars, char **argv, unsigned argc);
                  "\toption scan_data_type int32\n"
 
 bool handler__option(globals_t * vars, char **argv, unsigned argc);
+
+#define GETSPEED_SHRTDOC "get speed of process"
+#define GETSPEED_LONGDOC "usage: getspeed"
+
+bool handler__getspeed(globals_t *vars, char **argv, unsigned argc);
+
+#define SETSPEED_SHRTDOC "set speed of process"
+#define SETSPEED_LONGDOC "usage: setspeed <speed>"
+
+bool handler__setspeed(globals_t *vars, char **argv, unsigned argc);
+
 #endif

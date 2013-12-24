@@ -1601,3 +1601,18 @@ bool handler__option(globals_t * vars, char **argv, unsigned argc)
     }
     return true;
 }
+
+bool handler__getspeed(globals_t *vars, char **argv, unsigned argc)
+{
+    return true;
+}
+
+bool handler__setspeed(globals_t *vars, char **argv, unsigned argc)
+{
+    if (argc != 2)
+    {
+        show_error("bad arguments, see `help setspeed`.\n");
+        return false;
+    }
+    return true;
+}

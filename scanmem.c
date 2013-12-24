@@ -145,6 +145,8 @@ bool init()
     registercommand("dump", handler__dump, vars->commands, DUMP_SHRTDOC, DUMP_LONGDOC);
     registercommand("write", handler__write, vars->commands, WRITE_SHRTDOC, WRITE_LONGDOC);
     registercommand("option", handler__option, vars->commands, OPTION_SHRTDOC, OPTION_LONGDOC);
+    registercommand("getspeed", handler__getspeed, vars->commands, GETSPEED_SHRTDOC, GETSPEED_LONGDOC);
+    registercommand("setspeed", handler__setspeed, vars->commands, SETSPEED_SHRTDOC, SETSPEED_LONGDOC);
 
     /* commands beginning with __ have special meaning */
     registercommand("__eof", handler__eof, vars->commands, NULL, NULL);
